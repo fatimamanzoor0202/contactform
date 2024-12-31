@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script>
+    function handleSelection(event) {
+        const hobbies = document.getElementsByName('hobby');
+        hobbies.forEach(function(hobby) {
+            hobby.checked = false; 
+        });
+        event.target.checked = true;
+    }
+</script>
+</head>
+<body>
+    <h1 class="bar">STUDENT REGISTRATION FORM</h1>
+    <div class="app">
+        <form>
+            <!--Text Field-->
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="name"rquired ><br><br>
+            <!--Text Field-->
+            <label for="name">Last Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <!--Date of Birth Feild-->
+            <label for="date">Date of Birth</label>
+            <input type="date" id="name"me='date'required><br><br>
+            <!--Email Feild-->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <!--Mobile Number Field-->
+            <label for="number">Mobile Number</label>
+            <input type="number" id="name" name="number"required><br><br>
+            <!--Radio Button-->
+            <h2>Gender</h2>
+            <input type="radio" name="gender" id="name" value="male">
+            <label for="male">Male</label><br>
+        
+            <input type="radio" name="gender" id="name" value="female">
+            <label for="female">Female</label><br>
+        
+            <input type="radio" name="gender" id="name" value="other">
+            <label for="other">Other</label><br><br>
+            <!--Textarae-->
+            <label for="address">Address:</label>
+            <textarea name="address" id="name" cols="50px" rows="4px"></textarea><br><br>
+            <!--City Feild-->
+            <label for="city">City:</label>
+            <input type="city" id="name" name="city"><br><br>
+            <!--Password Feild-->
+            <label for="password">Pin Code:</label>
+            <input type="password" id="name" name="password" required><br><br>
+            <!--State Feild-->
+            <label for="state">State:</label>
+            <input type="state" id="name" name="state" required><br><br>
+            <!--Dropdown Menu-->
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="pakistan">Pakistan</option>
+                <option value="itly">Itly</option>
+                <option value="turkey">Turkey</option>
+                <option value="greece">Greece</option>
+                <option value="brazil">Brazil</option>
+                <option value="canada">Canada</option>
+                <option value="australia "> Australia </option>
+            </select>
+            <!--Checkbox-->
+            <h2>Hobbies</h2>
+            <input type="radio" id="drawing" name="hobby" value="drawing" onclick="handleSelection(event)">
+            <label for="drawing">Drawing</label><br>
+        
+            <input type="radio" id="singing" name="hobby" value="singing" onclick="handleSelection(event)">
+            <label for="singing">Singing</label><br>
+        
+            <input type="radio" id="dancing" name="hobby" value="dancing" onclick="handleSelection(event)">
+            <label for="dancing">Dancing</label><br>
+        
+            <input type="radio" id="sketching" name="hobby" value="sketching" onclick="handleSelection(event)">
+            <label for="sketching">Sketching</label><br>
+        
+            <input type="radio" id="others" name="hobby" value="others" onclick="handleSelection(event)">
+            <label for="others">Others</label><br><br>
+        </form>
+    </div>
+</body>
+</html>
